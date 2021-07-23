@@ -25,6 +25,8 @@ In this task, you will run the Azure AD Connect setup wizard to enable synchroni
 8. This initiates the installation of the Microsoft Azure Active Directory Connect Tool. 
 
 	If a **Do you want to run this file?** dialog box appears, select **Run**.
+	
+	If an error is shown stating that TLS 1.2 has to be enabled, follow the instructions linked in the wizard and enable TLS 1.2 using the powershell commands
 
 	If the **Welcome to Azure AD Connect** window does not appear on the desktop, find the icon for it on the taskbar (it will be the final icon on the right) and select it. 
 
