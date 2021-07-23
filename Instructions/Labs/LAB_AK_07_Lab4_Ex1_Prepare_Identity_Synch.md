@@ -53,7 +53,7 @@ In this task, you will run a script that breaks an on-premises user account. As 
 
 4. Enter the following command that runs a PowerShell script that creates a problem user account. This script, which is stored in the C:\labfiles folder, will purposely create an issue with the UserPrincipalName for the user's on-premises account; this will enable you to troubleshoot this account in the next task using the IdFix tool.  <br/>
 
-		.\CreateProblemUsers.ps1
+		.\CreateProblemUsers.ps1 
 	
 	**Note:** Wait until the script has completed before proceeding to the next task. This Windows PowerShell script will make the following change in AD DS:
 
