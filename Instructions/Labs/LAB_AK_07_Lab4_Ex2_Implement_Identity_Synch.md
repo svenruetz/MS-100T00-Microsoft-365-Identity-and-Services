@@ -169,6 +169,10 @@ In this task, you will force a sync between Adatum’s on-premises AD and Azure 
 		Start-ADSyncSyncCycle -PolicyType Delta
 	
 	‎**Note:** If for any reason the Domain Controller VM was restarted after the original full synchronization run, the Microsoft Azure AD Sync service may not have restarted. If this occurred, you’ll receive an error when you try to perform the forced sync above. If this occurs, you’ll need to start the Microsoft Azure AD Sync service first and then perform the forced synchronization. 
+	
+	**Note:** If the command still can not be found, you can manually import the module using:
+	
+		Import-Module -Name "C:\Program Files\Microsoft Azure AD Sync\Bin\ADSync" -Verbose
 
 4. Once the synchronization process has successfully completed, minimize your PowerShell window (do not close it) and proceed to the next task. You will use PowerShell in the next task to validate some of the results of the directory synchronization.
 
